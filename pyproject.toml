@@ -13,6 +13,7 @@ authors = [
 ]
 dependencies = [
   "semver",
+  "pandas"
 ]
 
 [project.urls]
@@ -20,6 +21,7 @@ Source = "https://github.com/jbadwaik/adventer"
 
 [project.scripts]
 adventer = "adventer:main"
+d01 = "adventer.day01:main"
 
 # --------------------------------------------------------------------------------------------------
 # Hatch configuration
