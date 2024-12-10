@@ -28,8 +28,7 @@ def p02():
             data.append(row)
 
     a = [int(row[0]) for row in data]
+    a = [int(row[0]) for row in data]
     b = [int(row[3]) for row in data]
 
     val_array = [val * b.count(val) for val in a]
-    print(val_array)
-    print(sum(val_array))

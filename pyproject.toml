@@ -23,6 +23,8 @@ Source = "https://github.com/jbadwaik/adventer"
 adventer = "adventer:main"
 d01p01 = "adventer.day01:p01"
 d01p02 = "adventer.day01:p02"
+d02p01 = "adventer.day02:p01"
+d02p02 = "adventer.day02:p02"
 
 # --------------------------------------------------------------------------------------------------
 # Hatch configuration
