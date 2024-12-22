@@ -27,6 +27,8 @@ d02p01 = "adventer.day02:p01"
 d02p02 = "adventer.day02:p02"
 d03p01 = "adventer.day03:p01"
 d03p02 = "adventer.day03:p02"
+d04p01 = "adventer.day04:p01"
+d04p02 = "adventer.day04:p02"
 
 # --------------------------------------------------------------------------------------------------
 # Hatch configuration
