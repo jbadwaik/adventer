@@ -1,10 +1,17 @@
 import csv
+import os
+import adventer
 
-test01_file = "share/day01/test01.csv"
-input_file = "share/day01/input.csv"
+def file_loc(user):
+    input_file = os.path.join("share", user, "day01/input.csv")
+    test_file = os.path.join("share", user, "day01/test.csv")
+    return input_file, test_file
 
 
 def p01():
+    user = adventer.parser.parser()
+    input_file, test_file = file_loc(user)
+
     with open(input_file, "r") as f:
         reader = csv.reader(f, delimiter=" ")
         data = []
@@ -21,6 +28,9 @@ def p01():
 
 
 def p02():
+    user = adventer.parser.parser()
+    input_file, test_file = file_loc(user)
+
     with open(input_file, "r") as f:
         reader = csv.reader(f, delimiter=" ")
         data = []

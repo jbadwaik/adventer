@@ -1,7 +1,15 @@
-test01_file = "share/day02/test01.csv"
-input_file = "share/day02/input.csv"
-
+import re
+import csv
+import os
+import adventer
 import copy
+
+
+def file_loc(user):
+    input_file = os.path.join("share", user, "day02/input.csv")
+    test_file = os.path.join("share", user, "day02/test.csv")
+    return input_file, test_file
+
 
 
 def is_monotonic(s):
@@ -17,6 +25,10 @@ def is_safe(s):
 
 
 def p02():
+    user = adventer.parser.parser()
+    input_file, test_file = file_loc(user)
+
+
     reports = []
     with open(input_file) as file:
         for input_line in file:
